@@ -1,0 +1,12 @@
+ID,Name,Description,Course Pre-Reqs
+MAT-345,Linear Algebra,Math with lines,MAT-121
+MAT-121,College Algebra,Freshmen level algebra,
+MAT-374,Statistics,Statistics with Calculus,MAT-121
+CST-105,Intro to Java,Intro to programming through java,
+CST-210,Intro to C++,Object Oriented programming in C++,CST-105
+CST-217,Database Design,Databasews using MySql,CST-105
+BUS-100,Intro to Business Admin,Freshmen intro to business,
+BUS-203,Business II,Continuation into Business,BUS-100
+BUS-313,Business III,Third level administration,BUS-203
+PHY-113,College Physics,Intro level kinematics and forces,MAT-121
+PHY-244,College Physics II,"Continuatino of forces, circular motion, and thermodynamics",PHY-113

@@ -1,0 +1,24 @@
+Character Index: 0
+Character name: You decide it faster, dont ask these people
+Character major: Engineering
+Character Health Level: 5
+Character Damage Level: 4
+Character Special Ability: Prove teacher wrong (Double Damage (25% Chance))
+Character Money : 41
+
+Character Index: 1
+Character name: Matthew
+Character major: Engineering
+Character Health Level: 1
+Character Damage Level: 3
+Character Special Ability: Prove teacher wrong (Double Damage (25% Chance))
+Character Money : 100
+
+Character Index: 2
+Character name: Matthew17
+Character major: Engineering
+Character Health Level: 4
+Character Damage Level: 4
+Character Special Ability: Prove teacher wrong (Double Damage (25% Chance))
+Character Money : 11
+

@@ -1,0 +1,24 @@
+0
+Charlie Tomato
+1234 Chester Rd.
+AZ,	85023
+555-555-1234
+
+1
+Chester Dog.
+1234 Charlie Rd.
+AZ,	85023
+555-555-1234
+
+2
+Matthew Powers
+7828 Robinson Ave
+MI 48101
+2487605401
+
+3
+Apple Sauce
+Appleseedlane
+mi	12345
+248650
+

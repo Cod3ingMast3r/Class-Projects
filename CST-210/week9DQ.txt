@@ -1,0 +1,32 @@
+Animal.h
+
+#pragma once
+using namespace std;
+#include <string>
+
+class Animal
+{
+private:
+	string name;
+	int weight;
+	string type;
+public:
+	Animal();
+	Animal(string n, int w, string t);
+	void eat();
+	int getWeight();
+	string getName();
+	string getType();
+
+};
+_______________________________________________
+Horse.h
+
+#pragma once
+#include "Animal.h"
+class Horse: public Animal
+{
+public:
+	Horse(string n, int w, string t);
+};
+

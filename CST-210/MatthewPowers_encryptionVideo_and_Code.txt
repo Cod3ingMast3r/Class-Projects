@@ -1,0 +1,40 @@
+https://www.loom.com/share/7d17a432aeac45fab49a5bb3b95f2538
+
+#include <iostream>
+using namespace std;
+
+string encrypt(string s, int n){
+
+  string result = "";
+    for(int i = 0; i < s.length(); i ++){
+      if(s[i] == 32){
+        //if it is a space it converts it to a blank rather than 32 onthe ascii table where it would mess up and add 97
+        result += " ";
+        continue;
+      }
+      //the code below subtracts 97 from each letter as a starts at 97 so a would now be 0 and any subsequent letters would be +1 and so on
+      //it only subtracts after we add the shift because if it was 1 shift and we subtract 97 it is now at 1 meaning it would be a b
+    result += char(int(s[i] + n - 97) % 26 + 97);
+  }
+  return result;
+}
+
+
+int main() {
+  string word;
+  int shift;
+  cout<< "What would you like to encrypt? ";
+  //gets input of word that will be encrypted
+  getline(cin,word);
+  cout << endl << "What is the shift? ";
+  //gets input of what the shift will be
+  cin >> shift;
+  for(int i = 0; i < word.length(); i ++){
+    //if the word has any capital letters they are converted to lowercsae on the ascii table so as to not mess up the shift
+    if(word[i] > 64 && word[i]<91){
+      word[i] = word[i] + 32;
+    }
+  }
+  //runs the encryption program
+  cout << encrypt(word, shift);
+}
