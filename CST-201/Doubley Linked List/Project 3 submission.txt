@@ -1,5 +1,11 @@
+Link:
+https://www.loom.com/share/9fd26f35663741a890b275332042dec4
+
+Code:
 # use insert order unique and popule list and use clean up to ensure no letters are passd through
 # do this for list 1 and 2 and then merge them and ensure that it returns new list and list 1 and 2 are both wiped clean after
+import os;
+from copy import copy
 
 
 class Node:
@@ -8,20 +14,11 @@ class Node:
         self.nextVal = None;
         self.prevVal = None;
     
-
-# class Node_Head:
-#     def __init__(self):
-#         self.headVal = None;
-    
-
 class LinkedList:
     def __init__(self):
         self.headVal = None;
         self.listSize = 0;
         self.reversed = False;
-
-    # def Head(self, headVal = None):
-    #     self.headVal = headVal;
 
     # O-n
     def InsertOrder(self, newVal):
@@ -231,12 +228,17 @@ class LinkedList:
 
         
 
-    # O-2n
+    # O-n
     def merge(self, linkedList):
+        newList = copy(self)
         currentNode = linkedList.headVal
         while currentNode != None:
-            self.InsertOrder(currentNode.dataVal)
+            newList.InsertOrderUnique(currentNode.dataVal)
             currentNode = currentNode.nextVal;
+        self.clear()
+        linkedList.clear()
+        return newList
+
     # O-n
     def cleanUp(self, stringVal):
         stringVal = stringVal.lower()
@@ -244,68 +246,43 @@ class LinkedList:
         for letter in stringVal:
             if letter.isalpha():
                 newString += letter
-        print(newString)
+        return newString
+    
+    # O-1
+    def clear(self):
+        self.headVal = Node()
+        self.listSize = 0
         
         
 
 
-list = LinkedList()
-
-print('Doubly Linked List empty(): ' + str(list.empty()))
-print('Doubly Linked List all: ' + list.displayList())
-
-list.InsertOrder(33)
-list.InsertOrder(44)
-list.InsertOrder(22)
-list.InsertOrder(100)
-list.InsertOrder(37)
-list.InsertOrder(49)
-list.InsertOrder(1)
-list.InsertOrder(9)
-
-print('Doubly Linked List all: ' + list.displayList())
-
-print('Doubly Linked List front(): ' + list.front())
-
-print('Doubly Linked List back(): ' + list.back())
-
-print('Doubly Linked List pop_back() value: ' + list.pop_back())
-
-print('Doubly Linked List all: ' + list.displayList())
-
-print('Doubly Linked List pop_front() value: ' + list.pop_front())
-
-print('Doubly Linked List all: ' + list.displayList())
-
-print('Doubly Linked List size(): ' + str(list.size()))
+list1 = LinkedList()
 
 list2 = LinkedList()
 
-list2.InsertOrder(39)
-list2.InsertOrder(17)
-list2.InsertOrder(13)
-list2.InsertOrder(45)
+currentDirectory = os.getcwd() + '\Project 3\Lists'
 
-print('Doubly Linked List merge(): ' + 'merged')
-list.merge(list2)
-print('Doubly Linked List all: ' + list.displayList())
+file1 = open(currentDirectory + '\List1.txt', 'r');
 
-### used to determine if each node follows the next ###
-# print('Doubly Linked List all front and back vals: ')
-# list.displayList2()
+file2 = open(currentDirectory + '\List2.txt', 'r');
 
-##### good up to here, order of prev and next and current are all established correctly, look into reverse2 function
+for line in file1.readlines():
+    for word in line.split(' '):
+        word = word.replace('\n', '')
+        word = list1.cleanUp(word)
+        list1.InsertOrderUnique(word)
 
-print('Doubly Linked List reverse(): ' + 'reversed')
-list.reverse()
+for line in file2.readlines():
+    for word in line.split(' '):
+        word = word.replace('\n', '')
+        word = list2.cleanUp(word)
+        list2.InsertOrderUnique(word)
 
-list.InsertOrder(31)
-list.InsertOrderUnique(33)
-list.InsertOrderUnique(33)
-list.InsertOrderUnique(33)
-list.remove(22)
+print('Doubly Linked List1 all before merge: ' + list1.displayList())
+print('Doubly Linked List2 all before merge: ' + list2.displayList())
 
-print('Doubly Linked List all: ' + list.displayList())
+list3 = list1.merge(list2)
 
-list.cleanUp('111ap123ple32')
-
+print('Doubly Linked List1 all after merge: ' + list1.displayList())
+print('Doubly Linked List2 all after merge: ' + list2.displayList())
+print('Doubly Linked List3 all uique combined: ' + list3.displayList())

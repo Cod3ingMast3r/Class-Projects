@@ -1,16 +1,15 @@
-from numpy import insert
+Link:
+https://www.loom.com/share/0b7e84142f344f9db90b18fe77ac53f8
 
+Code:
 
+from copy import copy;
 class Node:
     def __init__(self, dataVal = None):
         self.dataVal = dataVal;
         self.nextVal = None;
     
 
-# class Node_Head:
-#     def __init__(self):
-#         self.headVal = None;
-    
 
 class LinkedList:
     def __init__(self):
@@ -128,11 +127,19 @@ class LinkedList:
 
     # O-2n
     def merge(self, linkedList):
+        newList = copy(self)
         currentNode = linkedList.headVal
         while currentNode != None:
-            self.Insert(currentNode.dataVal)
+            newList.Insert(currentNode.dataVal)
             currentNode = currentNode.nextVal;
-
+        self.clear()
+        linkedList.clear()
+        return newList
+        
+    # O-1
+    def clear(self):
+        self.headVal = Node()
+        self.listSize = 0
 
 
 
@@ -176,18 +183,10 @@ list2.Insert(13)
 list2.Insert(45)
 
 print('Singley Linked List merge(): ' + 'merged')
-list.merge(list2)
-print('Singley Linked List all: ' + list.displayList())
+list3 = list.merge(list2)
+print('Singley Linked List all: ' + list3.displayList())
 
 print('Singley Linked List reverse(): ' + 'reversed')
-list.reverse()
+list3.reverse()
 
-print('Singley Linked List all: ' + list.displayList())
-
-list2 = LinkedList()
-
-list2.Insert(39)
-list2.Insert(17)
-list2.Insert(13)
-list2.Insert(45)
-
+print('Singley Linked List all: ' + list3.displayList())

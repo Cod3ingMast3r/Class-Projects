@@ -1,10 +1,107 @@
 ##### Incomplete!!! #####
+from itertools import combinations
+
 
 def Main():
     Variables = ['A', 'B']
     combinations = Combinations(Variables,['T', 'F'])
+        
+##### comparison for AND #####
+    rowVals = []
+    title = 'AND'
+    for variableSet in combinations:
+        variableSetDict = combinations[variableSet]
+        if variableSetDict[Variables[0]] == 'T' and variableSetDict[Variables[1]] == 'T':
+            bool_Val = 'True '
+        else:
+            bool_Val = 'False'
+
+        row_val = "|  " + Variables[0] + " = " + variableSetDict[Variables[0]] + ", " + Variables[1] + " = " + variableSetDict[Variables[1]] + "  | "+ Variables[0] + " " + title + " " + Variables[1] + " = " + bool_Val + "  |"
+        rowVals.append(row_val)
+    FormTable(title, rowVals)
+##### comparison for AND #####
+    print()
+##### comparison for NAND #####
+    rowVals = []
+    title = 'NAND'
+    for variableSet in combinations:
+        variableSetDict = combinations[variableSet]
+        if variableSetDict[Variables[0]] == 'T' and variableSetDict[Variables[1]] == 'T':
+            bool_Val = 'False'
+        else:
+            bool_Val = 'True '
+
+        row_val = "|  " + Variables[0] + " = " + variableSetDict[Variables[0]] + ", " + Variables[1] + " = " + variableSetDict[Variables[1]] + "  | "+ Variables[0] + " " + title + " " + Variables[1] + " = " + bool_Val + "  |"
+        rowVals.append(row_val)
+    FormTable(title, rowVals)
+##### comparison for NAND #####
+
+
+##### comparison for OR #####
+    rowVals = []
+    title = 'OR'
+    for variableSet in combinations:
+        variableSetDict = combinations[variableSet]
+        if variableSetDict[Variables[0]] == 'T' or variableSetDict[Variables[1]] == 'T':
+            bool_Val = 'True '
+        else:
+            bool_Val = 'False'
+
+        row_val = "|  " + Variables[0] + " = " + variableSetDict[Variables[0]] + ", " + Variables[1] + " = " + variableSetDict[Variables[1]] + "  | "+ Variables[0] + " " + title + " " + Variables[1] + " = " + bool_Val + "  |"
+        rowVals.append(row_val)
+    FormTable(title, rowVals)
+##### comparison for OR #####
+    print()
+##### comparison for NOR #####
+    rowVals = []
+    title = 'NOR'
+    for variableSet in combinations:
+        variableSetDict = combinations[variableSet]
+        if variableSetDict[Variables[0]] == 'T' or variableSetDict[Variables[1]] == 'T':
+            bool_Val = 'False'
+        else:
+            bool_Val = 'True '
+
+        row_val = "|  " + Variables[0] + " = " + variableSetDict[Variables[0]] + ", " + Variables[1] + " = " + variableSetDict[Variables[1]] + "  | "+ Variables[0] + " " + title + " " + Variables[1] + " = " + bool_Val + "  |"
+        rowVals.append(row_val)
+    FormTable(title, rowVals)
+##### comparison for NOR #####
+    print()
+##### comparison for XOR #####
+    rowVals = []
+    title = 'XOR'
+    for variableSet in combinations:
+        variableSetDict = combinations[variableSet]
+        if (variableSetDict[Variables[0]] == 'T' or variableSetDict[Variables[1]] == 'T') and (variableSetDict[Variables[0]] != variableSetDict[Variables[1]]) :
+            bool_Val = 'True '
+        else:
+            bool_Val = 'False'
+
+        row_val = "|  " + Variables[0] + " = " + variableSetDict[Variables[0]] + ", " + Variables[1] + " = " + variableSetDict[Variables[1]] + "  | "+ Variables[0] + " " + title + " " + Variables[1] + " = " + bool_Val + "  |"
+        rowVals.append(row_val)
+    FormTable(title, rowVals)
+##### comparison for XOR #####
+    print()
+##### comparison for NOT #####
+    NOTcombinations = {Variables[0] +':T':{Variables[0] : 'T'},Variables[0] +':F':{Variables[0] : 'F'}}
+    rowVals = []
+    title = 'NOT'
+    for variableSet in NOTcombinations:
+        NOTVariableSetDict = NOTcombinations[variableSet]
+        if (NOTVariableSetDict[Variables[0]] == 'T') :
+            bool_Val = 'False'
+        else:
+            bool_Val = 'True '
+
+        row_val = "|     " + Variables[0] + " = " + NOTVariableSetDict[Variables[0]] + "    |    " + title + " " + Variables[0] + " = " + bool_Val + "   |"
+        rowVals.append(row_val)
+    FormTable(title, rowVals)
+##### comparison for NOT #####
+
+
+def FormTable(title, rows = []):
     ##### Prints Header #####
-    header = "+  "+ str(Variables[0]) + "       "+ str(Variables[0]) + "     |       "+ str(Variables[0]) + " AND "+ str(Variables[1]) + "       "+ str(Variables[0]) + " OR "+ str(Variables[1]) + "       "+ str(Variables[0]) + " NAND "+ str(Variables[1]) +"       "+ str(Variables[0]) +" NOR "+ str(Variables[1]) +"  +"
+    header = header = "|          "+ title + ' truth table' +"          |"
     divider = "+"
     for dashes in range(1,len(header)-1):
         divider += '-'
@@ -13,51 +110,10 @@ def Main():
     print(divider)
     print(header)
     print(divider)
-    
+    for row in rows:
+        print(row)
+    print(divider.replace('+', ""))
     ##### Prints Header #####
-
-    for variableSet in combinations:
-        variableSetDict = combinations[variableSet]
-        
-    ##### comparison for p^q #####
-        if variableSetDict[Variables[0]] == 'T' and variableSetDict[Variables[1]] == 'T':
-            _and_ = 'T'
-            _nand_ = 'F'
-        else:
-            _and_ = 'F'
-            _nand_ = 'T'
-    ##### comparison for p^q #####
-
-    ##### comparison for pvq #####
-        if variableSetDict[Variables[0]] == 'T' or variableSetDict[Variables[1]] == 'T':
-            _or_ = 'T'
-            _nor_ = 'F'
-        else:
-            _or_ = 'F'
-            _nor_ = 'T'
-    ##### comparison for pvq #####
-
-    ##### comparison for p->q #####
-        if (variableSetDict[Variables[1]] == 'T') or (variableSetDict[Variables[0]] == variableSetDict[Variables[1]]):
-            _than_ = 'T'
-        else:
-            _than_ = 'F'
-    ##### comparison for p->q #####
-
-    ##### comparison for p<->q #####
-        if variableSetDict[Variables[0]] == variableSetDict[Variables[1]]:
-            _and_than_ = 'T'
-        else:
-            _and_than_ = 'F'
-    ##### comparison for p<->q #####
-
-    ##### Prints Values #####
-        print("+  " + variableSetDict[Variables[0]] + "       " + variableSetDict[Variables[1]] + "     |          "+ _and_ + "            " + _or_ + "              " + _nand_ + "             " + _nor_ + "     +")
-    ##### Prints Values #####
-
-    ##### Prints Footer #####
-    print(divider)
-    ##### Prints Footer #####
 
 def Combinations(variableArray, valuesArray):
     combinations = {}
