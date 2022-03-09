@@ -35,12 +35,12 @@ CREATE TABLE `students` (
   `City` varchar(45) DEFAULT NULL,
   `Zip` varchar(45) DEFAULT NULL,
   `Country` varchar(45) DEFAULT NULL,
-  `rooms_Room Number` int DEFAULT NULL,
-  `rooms_Buildings_Building Number` int DEFAULT NULL,
+  `rooms_Room_Number` int DEFAULT NULL,
+  `rooms_Buildings_Building_Number` int DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `ID_UNIQUE` (`ID`),
-  KEY `fk_students_rooms1_idx` (`rooms_Room Number`,`rooms_Buildings_Building Number`),
-  CONSTRAINT `fk_students_rooms1` FOREIGN KEY (`rooms_Room Number`, `rooms_Buildings_Building Number`) REFERENCES `rooms` (`Room Number`, `Buildings_Building Number`)
+  KEY `fk_students_rooms1_idx` (`rooms_Room_Number`,`rooms_Buildings_Building_Number`),
+  CONSTRAINT `fk_students_rooms1` FOREIGN KEY (`rooms_Room_Number`, `rooms_Buildings_Building_Number`) REFERENCES `rooms` (`Room_Number`, `Buildings_Building_Number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -63,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-27 19:12:04
+-- Dump completed on 2022-02-10 18:09:35

@@ -16,30 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `rooms`
+-- Table structure for table `buildings`
 --
 
-DROP TABLE IF EXISTS `rooms`;
+DROP TABLE IF EXISTS `buildings`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `rooms` (
-  `Room Number` int NOT NULL,
-  `Buildings_Building Number` int NOT NULL,
-  `Occupancy` int DEFAULT NULL,
-  PRIMARY KEY (`Room Number`,`Buildings_Building Number`),
-  KEY `fk_Rooms_Buildings1_idx` (`Buildings_Building Number`),
-  CONSTRAINT `fk_Rooms_Buildings1` FOREIGN KEY (`Buildings_Building Number`) REFERENCES `buildings` (`Building Number`)
+CREATE TABLE `buildings` (
+  `Building_Number` int NOT NULL,
+  `Name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Building_Number`),
+  UNIQUE KEY `Building Number_UNIQUE` (`Building_Number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `rooms`
+-- Dumping data for table `buildings`
 --
 
-LOCK TABLES `rooms` WRITE;
-/*!40000 ALTER TABLE `rooms` DISABLE KEYS */;
-INSERT INTO `rooms` VALUES (101,1,4),(101,2,4),(101,3,12),(101,4,40),(101,5,12),(102,1,4),(102,2,4),(102,3,14),(102,4,50),(102,5,24),(103,1,4),(103,2,4),(103,3,16),(103,4,48),(103,5,10),(104,1,4),(104,2,4),(104,3,20),(104,4,32),(104,5,16),(105,1,4),(105,2,4),(105,3,30),(105,4,16),(105,5,30);
-/*!40000 ALTER TABLE `rooms` ENABLE KEYS */;
+LOCK TABLES `buildings` WRITE;
+/*!40000 ALTER TABLE `buildings` DISABLE KEYS */;
+INSERT INTO `buildings` VALUES (1,'Prescott'),(2,'CamelBack'),(3,'Engineering'),(4,'Buisness'),(5,'Technology');
+/*!40000 ALTER TABLE `buildings` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-27 19:12:05
+-- Dump completed on 2022-02-10 18:09:35

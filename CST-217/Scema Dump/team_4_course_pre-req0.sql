@@ -16,28 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `buildings`
+-- Table structure for table `course_pre-req`
 --
 
-DROP TABLE IF EXISTS `buildings`;
+DROP TABLE IF EXISTS `course_pre-req`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `buildings` (
-  `Building Number` int NOT NULL,
-  `Name` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Building Number`),
-  UNIQUE KEY `Building Number_UNIQUE` (`Building Number`)
+CREATE TABLE `course_pre-req` (
+  `Courses_ID` varchar(7) NOT NULL,
+  `Course_Pre-req` varchar(7) NOT NULL,
+  PRIMARY KEY (`Courses_ID`,`Course_Pre-req`),
+  KEY `fk_Courses_has_Courses_Courses2_idx` (`Course_Pre-req`),
+  KEY `fk_Courses_has_Courses_Courses1_idx` (`Courses_ID`),
+  CONSTRAINT `fk_Courses_has_Courses_Courses1` FOREIGN KEY (`Courses_ID`) REFERENCES `courses` (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `buildings`
+-- Dumping data for table `course_pre-req`
 --
 
-LOCK TABLES `buildings` WRITE;
-/*!40000 ALTER TABLE `buildings` DISABLE KEYS */;
-INSERT INTO `buildings` VALUES (1,'Prescott'),(2,'CamelBack'),(3,'Engineering'),(4,'Buisness'),(5,'Technology');
-/*!40000 ALTER TABLE `buildings` ENABLE KEYS */;
+LOCK TABLES `course_pre-req` WRITE;
+/*!40000 ALTER TABLE `course_pre-req` DISABLE KEYS */;
+INSERT INTO `course_pre-req` VALUES ('BUS-203','BUS-100'),('BUS-313','BUS-203'),('CST-210','CST-105'),('CST-217','CST-210'),('MAT-345','MAT-121'),('MAT-374','MAT-345'),('BUS-100','None'),('CST-105','None'),('MAT-121','None'),('PHY-113','None');
+/*!40000 ALTER TABLE `course_pre-req` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-27 19:12:05
+-- Dump completed on 2022-02-10 18:09:35

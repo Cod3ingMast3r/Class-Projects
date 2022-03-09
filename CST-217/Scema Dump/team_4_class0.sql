@@ -24,19 +24,19 @@ DROP TABLE IF EXISTS `class`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `class` (
   `ID` varchar(7) NOT NULL,
-  `Class Time` time DEFAULT NULL,
-  `Class Start Date` date DEFAULT NULL,
-  `Class End Date` date DEFAULT NULL,
-  `Class Meeting Days` varchar(45) DEFAULT NULL,
+  `Class_Time` time DEFAULT NULL,
+  `Class_Start_Date` date DEFAULT NULL,
+  `Class_End_Date` date DEFAULT NULL,
+  `Class_Meeting_Days` varchar(45) DEFAULT NULL,
   `Professor_ID` int NOT NULL,
   `Courses_ID` varchar(7) NOT NULL,
-  `rooms_Room Number` int DEFAULT NULL,
-  `rooms_Buildings_Building Number` int DEFAULT NULL,
+  `rooms_Room_Number` int DEFAULT NULL,
+  `rooms_Buildings_Building_Number` int DEFAULT NULL,
   PRIMARY KEY (`ID`),
   KEY `fk_Classes_Professor1_idx` (`Professor_ID`),
   KEY `fk_Classes_Courses1_idx` (`Courses_ID`),
-  KEY `fk_class_rooms1_idx` (`rooms_Room Number`,`rooms_Buildings_Building Number`),
-  CONSTRAINT `fk_class_rooms1` FOREIGN KEY (`rooms_Room Number`, `rooms_Buildings_Building Number`) REFERENCES `rooms` (`Room Number`, `Buildings_Building Number`),
+  KEY `fk_class_rooms1_idx` (`rooms_Room_Number`,`rooms_Buildings_Building_Number`),
+  CONSTRAINT `fk_class_rooms1` FOREIGN KEY (`rooms_Room_Number`, `rooms_Buildings_Building_Number`) REFERENCES `rooms` (`Room_Number`, `Buildings_Building_Number`),
   CONSTRAINT `fk_Classes_Courses1` FOREIGN KEY (`Courses_ID`) REFERENCES `courses` (`ID`),
   CONSTRAINT `fk_Classes_Professor1` FOREIGN KEY (`Professor_ID`) REFERENCES `professor` (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -61,4 +61,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-27 19:12:05
+-- Dump completed on 2022-02-10 18:09:35

@@ -16,30 +16,34 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `course pre-req`
+-- Table structure for table `activities`
 --
 
-DROP TABLE IF EXISTS `course pre-req`;
+DROP TABLE IF EXISTS `activities`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `course pre-req` (
-  `Courses_ID` varchar(7) NOT NULL,
-  `Course_Pre-rec` varchar(7) NOT NULL DEFAULT 'Null',
-  PRIMARY KEY (`Courses_ID`,`Course_Pre-rec`),
-  KEY `fk_Courses_has_Courses_Courses2_idx` (`Course_Pre-rec`),
-  KEY `fk_Courses_has_Courses_Courses1_idx` (`Courses_ID`),
-  CONSTRAINT `fk_Courses_has_Courses_Courses1` FOREIGN KEY (`Courses_ID`) REFERENCES `courses` (`ID`)
+CREATE TABLE `activities` (
+  `ID` int NOT NULL,
+  `Start Time` time DEFAULT NULL,
+  `Date` date DEFAULT NULL,
+  `Budget` varchar(45) DEFAULT NULL,
+  `Name` varchar(45) DEFAULT NULL,
+  `rooms_Room_Number` int DEFAULT NULL,
+  `rooms_Buildings_Building_Number` int DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `fk_activities_rooms1_idx` (`rooms_Room_Number`,`rooms_Buildings_Building_Number`),
+  CONSTRAINT `fk_activities_rooms1` FOREIGN KEY (`rooms_Room_Number`, `rooms_Buildings_Building_Number`) REFERENCES `rooms` (`Room_Number`, `Buildings_Building_Number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `course pre-req`
+-- Dumping data for table `activities`
 --
 
-LOCK TABLES `course pre-req` WRITE;
-/*!40000 ALTER TABLE `course pre-req` DISABLE KEYS */;
-INSERT INTO `course pre-req` VALUES ('BUS-203','BUS-100'),('BUS-313','BUS-203'),('CST-210','CST-105'),('CST-217','CST-210'),('MAT-345','MAT-121'),('MAT-374','MAT-345'),('BUS-100','Null'),('CST-105','Null'),('MAT-121','Null'),('PHY-113','Null');
-/*!40000 ALTER TABLE `course pre-req` ENABLE KEYS */;
+LOCK TABLES `activities` WRITE;
+/*!40000 ALTER TABLE `activities` DISABLE KEYS */;
+INSERT INTO `activities` VALUES (143,'09:47:00','2021-01-17','3833','Soccer',NULL,NULL),(177,'11:16:00','2021-01-17','4475','Technology',NULL,NULL),(293,'15:15:00','2021-01-18','405','Mountain Biking',103,2),(388,'09:40:00','2021-01-30','2618','Soccer',NULL,NULL),(475,'16:30:00','2021-01-11','685','Basketball',104,3),(488,'13:19:00','2021-01-17','2144','ACE',NULL,NULL),(629,'17:36:00','2021-01-01','4506','Cooking',NULL,5),(675,'13:38:00','2021-01-05','2489','Cooking',NULL,NULL),(713,'13:09:00','2021-01-25','2095','Game Design',NULL,NULL);
+/*!40000 ALTER TABLE `activities` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-27 19:12:05
+-- Dump completed on 2022-02-10 18:09:35

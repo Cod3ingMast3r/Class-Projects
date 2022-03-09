@@ -1,0 +1,36 @@
+[{
+  "ID": "74218",
+  "fName": "Constance",
+  "lName": "Juarez",
+  "Sex": "M",
+  "Email": "juarez.constance4915@gcu.edu",
+  "Phone": "(584) 492-4532",
+  "Date_of_Birth": "2/14/1959",
+  "Major": "Computer Science",
+  "Address": {
+    "Street Address": "580-2985 Sapien, St.",
+    "City": "Gasteiz",
+    "Zip": "41535",
+    "Country": "Costa Rica"
+  },
+  "Hobby": [
+    "Dance",
+    "Sports",
+    "Science"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Melony",
+      "lName": "Juarez",
+      "Relation": "Mother",
+      "Phone": "(584) 442-4682"
+    },
+    {
+      "fName": "Greg",
+      "lName": "Juarez",
+      "Relation": "Father",
+      "Phone": "(584) 442-4696"
+    }
+  ]
+}
+]

@@ -256,7 +256,7 @@ list1 = LinkedList()
 
 list2 = LinkedList()
 
-currentDirectory = os.getcwd() + '\Project 3\Lists'
+currentDirectory = os.getcwd() + '\Doubley Linked List\Lists'
 
 file1 = open(currentDirectory + '\List1.txt', 'r');
 
