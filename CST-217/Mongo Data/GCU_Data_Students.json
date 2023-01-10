@@ -1,0 +1,330 @@
+[{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac1"
+  },
+  "ID": 1,
+  "fName": "Constance",
+  "lName": "Juarez",
+  "Sex": "M",
+  "Email": "juarez.constance4915@gcu.edu",
+  "Phone": "(584) 492-4532",
+  "Date_of_Birth": "2/14/1959",
+  "Major": "Computer Science",
+  "Address": {
+    "Street_Address": "580-2985 Sapien, St.",
+    "City": "Gasteiz",
+    "Zip": "41535",
+    "Country": "Costa Rica"
+  },
+  "Hobby": [
+    "Dance",
+    "Sports",
+    "Science"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Melony",
+      "lName": "Juarez",
+      "Relation": "Mother",
+      "Phone": "(584) 442-4682"
+    },
+    {
+      "fName": "Greg",
+      "lName": "Juarez",
+      "Relation": "Father",
+      "Phone": "(584) 442-4696"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac2"
+  },
+  "ID": 2,
+  "fName": "Stevey",
+  "lName": "Jobs",
+  "Sex": "F",
+  "Email": "steveyjobs@apple.com",
+  "Phone": "6969996685",
+  "Date_of_Birth": "6/6/2006",
+  "Major": "computer science",
+  "Address": {
+    "Street_Address": "2112 W Jueve",
+    "City": "Bulltown",
+    "Zip": "12052",
+    "Country": "United States"
+  },
+  "Hobby": [
+    "Nerd Mobiles",
+    "Knitting",
+    "Eating apples"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Steve",
+      "lName": "Jobs",
+      "Relation": "Father",
+      "Phone": "2301571425"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac3"
+  },
+  "ID": 3,
+  "fName": "Clark",
+  "lName": "Kent",
+  "Sex": "M",
+  "Email": "ClarkKent@Planet.com",
+  "Phone": "1245731111",
+  "Date_of_Birth": "6/30/1998",
+  "Major": "English",
+  "Address": {
+    "Street_Address": "135 Super Ln",
+    "City": "Small American Town",
+    "Zip": "00053",
+    "Country": "United States"
+  },
+  "Hobby": [
+    "Long Jump",
+    "Football"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Jor-",
+      "lName": "El",
+      "Relation": "Father",
+      "Phone": "111123456"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac4"
+  },
+  "ID": 4,
+  "fName": "Greg",
+  "lName": "Hedgehog",
+  "Sex": "M",
+  "Email": "GregTheHedgehog@yahoo.com",
+  "Phone": "6025023156",
+  "Date_of_Birth": "6/31/1991",
+  "Major": "Sports Theory",
+  "Address": {
+    "Street_Address": "Grass Lawn",
+    "City": "Green Hill",
+    "Zip": "12032",
+    "Country": "Seven Rings"
+  },
+  "Hobby": [
+    "5600 mile sprint",
+    "Knitting"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Eggman",
+      "lName": "Robotnik",
+      "Relation": "Nemsis",
+      "Phone": "6543211234"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac5"
+  },
+  "ID": 5,
+  "fName": "Steve jr.",
+  "lName": "Jobs",
+  "Sex": "M",
+  "Email": "stevejobs@apple.com",
+  "Phone": "6969996696",
+  "Date_of_Birth": "6/6/2006",
+  "Major": "computer science",
+  "Address": {
+    "Street_Address": "2112 W Jueve",
+    "City": "Bulltown",
+    "Zip": "12052",
+    "Country": "United States"
+  },
+  "Hobby": [
+    "Nerd Mobiles",
+    "Bomber",
+    "Eating apples"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Steve",
+      "lName": "Jobs",
+      "Relation": "Father",
+      "Phone": "2301571425"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac6"
+  },
+  "ID": 6,
+  "fName": "Lois",
+  "lName": "Lane",
+  "Sex": "F",
+  "Email": "LoisLane@Planet.com",
+  "Phone": "1245731134",
+  "Date_of_Birth": "8/27/1999",
+  "Major": "English",
+  "Address": {
+    "Street_Address": "135 Super Ln",
+    "City": "Small American Town",
+    "Zip": "00053",
+    "Country": "United States"
+  },
+  "Hobby": [
+    "Writing",
+    "Knitting"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Parker-",
+      "lName": "Lane",
+      "Relation": "Father",
+      "Phone": "111123453"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac7"
+  },
+  "ID": 7,
+  "fName": "Sonic",
+  "lName": "Hedgehog",
+  "Sex": "M",
+  "Email": "SonicTheHedgehog@yahoo.com",
+  "Phone": "6025023147",
+  "Date_of_Birth": "6/31/1991",
+  "Major": "Sports Theory",
+  "Address": {
+    "Street_Address": "Grass Lawn",
+    "City": "Green Hill",
+    "Zip": "12032",
+    "Country": "Seven Rings"
+  },
+  "Hobby": [
+    "500 mile sprint"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Eggman",
+      "lName": "Robotnik",
+      "Relation": "Nemsis",
+      "Phone": "6543211234"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac8"
+  },
+  "ID": 8,
+  "fName": "David",
+  "lName": "Bloker",
+  "Sex": "M",
+  "Email": "dbloker@my.gcu.edu",
+  "Phone": "554-890-1234",
+  "Date_of_Birth": "07/07/1999",
+  "Major": "Nursing",
+  "Address": {
+    "Street_Address": "123 Sesame St",
+    "City": "Chicago",
+    "Zip": "96789",
+    "Country": "United States"
+  },
+  "Hobby": [
+    "Skating",
+    "Running from Police",
+    "Graffiti"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "James",
+      "lName": "Blocker",
+      "Relation": "Father",
+      "Phone": "554-890-1233"
+    },
+    {
+      "fName": "Erik",
+      "lName": "Lenser",
+      "Relation": "Parole Officer",
+      "Phone": "554-123-0234"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8ac9"
+  },
+  "ID": 9,
+  "fName": "Peter",
+  "lName": "Porker",
+  "Sex": "M",
+  "Email": "pporker@my.avengers.net",
+  "Phone": "890-234-1234",
+  "Date_of_Birth": "07/04/2001",
+  "Major": "Mechanical Engineering",
+  "Address": {
+    "Street_Address": "478 Main Ave",
+    "City": "New York City",
+    "Zip": "67893",
+    "Country": "United States"
+  },
+  "Hobby": [
+    "Rock Climbing",
+    "Acrobatics",
+    "Avenging"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "May",
+      "lName": "Porker",
+      "Relation": "Aunt",
+      "Phone": "890-234-1232"
+    },
+    {
+      "fName": "Anthony",
+      "lName": "Stork",
+      "Relation": "Boss",
+      "Phone": "123-456-7890"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623a6a2e38a46b2ce9ab8aca"
+  },
+  "ID": 10,
+  "fName": "Toph",
+  "lName": "Beifong",
+  "Sex": "F",
+  "Email": "tbeifong@my.gcu.edu",
+  "Phone": "928-309-1622",
+  "Date_of_Birth": "02/29/2002",
+  "Major": "Geology",
+  "Address": {
+    "Street_Address": "457 Rock Lane",
+    "City": "Ba Sing Sei",
+    "Zip": "34567",
+    "Country": "Earth Kingdom"
+  },
+  "Hobby": [
+    "Rock Throwing",
+    "Committing War Crimes",
+    "Chess"
+  ],
+  "Emergency Contact:": [
+    {
+      "fName": "Sapphire",
+      "lName": "Fire",
+      "Relation": "Guardian",
+      "Phone": "122-456-0345"
+    },
+    {
+      "fName": "Sokka",
+      "lName": "Watertribe",
+      "Relation": "Brother",
+      "Phone": "122-456-0346"
+    }
+  ]
+}]

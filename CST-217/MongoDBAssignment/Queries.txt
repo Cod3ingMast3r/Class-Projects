@@ -1,0 +1,80 @@
+___________________________________________________________________________________________________________________________
+1. Show all the books in your bookstore sorted by cost of the book.
+---------------------------------------------------------------------------------------------------------------------------
+db.book_information.aggregate([{
+    $sort: {
+        cost: 1
+    }
+}])
+___________________________________________________________________________________________________________________________
+2. Show how many books of each genre in your bookstore.
+---------------------------------------------------------------------------------------------------------------------------
+db.book_information.aggregate([{$sortByCount: '$genre'}])
+___________________________________________________________________________________________________________________________
+3. Show all the poetry books in your store that cost more than average cost of books.
+---------------------------------------------------------------------------------------------------------------------------
+var average = db.book_information.aggregate([
+    { "$group": { "_id": "null", avg: { "$avg": "$cost"} }}
+]).toArray()[0]["avg"];
+
+db.book_information.find({"cost": {$gt: average}, genre: 'poetry'})
+___________________________________________________________________________________________________________________________
+4. Show all the authors in your bookstore and the number of books they have.
+---------------------------------------------------------------------------------------------------------------------------
+db.book_information.aggregate([{$unwind: {
+ path: '$Authors'
+}}, {$group: {
+ _id: '$Authors',
+ Books: {
+  $push: '$title'
+ }
+}}, {$addFields: {
+ _id: {
+  $concat: [
+   '$_id.fname',
+   ' ',
+   '$_id.lname'
+  ]
+ },
+ Books: {
+  $size: '$Books'
+ }
+}}])
+___________________________________________________________________________________________________________________________
+5. Show all the unique publishers in your bookstore with the number of authors they work with.
+---------------------------------------------------------------------------------------------------------------------------
+db.book_information.aggregate([{$group: {
+ _id: '$publisher_name',
+ Authors: {
+  $push: '$Authors'
+ }
+}}, {$addFields: {
+ Authors: {
+  $size: '$Authors'
+ }
+}}])
+___________________________________________________________________________________________________________________________
+6. What is the total value of all the books put together in your bookstore based on authors sorted in descending order?
+---------------------------------------------------------------------------------------------------------------------------
+db.book_information.aggregate([{$unwind: {
+ path: '$Authors'
+}}, {$group: {
+ _id: '$Authors',
+ Books_Cost: {
+  $push: '$cost'
+ }
+}}, {$addFields: {
+ _id: {
+  $concat: [
+   '$_id.fname',
+   ' ',
+   '$_id.lname'
+  ]
+ },
+ Books_Cost: {
+  $sum: '$Books_Cost'
+ }
+}}, {$sort: {
+ Books_Cost: -1
+}}])
+___________________________________________________________________________________________________________________________

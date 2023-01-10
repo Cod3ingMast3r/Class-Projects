@@ -1,0 +1,195 @@
+[{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8adf"
+  },
+  "ID": 1,
+  "Professor_ID": 1,
+  "Name": "MAT-345",
+  "Class_Time": "10:45",
+  "Room_Number": "4-112",
+  "Student_IDs": [
+    2,
+    8,
+    10
+  ],
+  "Class_End_Date": "2022-04-30",
+  "Class_Meeting_Days": [
+    "Thur",
+    "Fri"
+  ],
+  "Class_Start_Date": "2021-01-04"
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae0"
+  },
+  "ID": 2,
+  "Name": "MAT-121",
+  "Class_Time": "13:00",
+  "Student_IDs": [
+    4,
+    7,
+    10
+  ],
+  "Professor_ID": 2,
+  "Class_End_Date": "2022-05-01",
+  "Class_Meeting_Days": [
+    "Thur",
+    "Fri"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Room_Number": "5-117"
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae1"
+  },
+  "ID": 3,
+  "Name": "MAT-374",
+  "Class_End_Date": "2022-05-02",
+  "Class_Meeting_Days": [
+    "Mon",
+    "Wed"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "18:00",
+  "Professor_ID": 1,
+  "Room_Number": "4-112",
+  "Student_IDs": [
+    6,
+    9
+  ]
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae2"
+  },
+  "ID": 4,
+  "Name": "CST-105",
+  "Class_End_Date": "2022-05-03",
+  "Class_Meeting_Days": [
+    "Tues",
+    "Wed"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "15:30",
+  "Professor_ID": 3,
+  "Room_Number": "4-212",
+  "Student_IDs": [
+    5,
+    9
+  ]
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae3"
+  },
+  "ID": 5,
+  "Name": "CST-210",
+  "Class_End_Date": "2022-05-04",
+  "Class_Meeting_Days": [
+    "Mon",
+    "Fri"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "14:20",
+  "Professor_ID": 4,
+  "Room_Number": "12-317",
+  "Student_IDs": [
+    10
+  ]
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae4"
+  },
+  "ID": 6,
+  "Name": "CST-217",
+  "Class_End_Date": "2022-05-05",
+  "Class_Meeting_Days": [
+    "Tues",
+    "Fri"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "13:00",
+  "Professor_ID": 3,
+  "Room_Number": "30-322",
+  "Student_IDs": [
+    7,
+    8,
+    9
+  ]
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae5"
+  },
+  "ID": 7,
+  "Name": "BUS-100",
+  "Class_End_Date": "2022-05-06",
+  "Class_Meeting_Days": [
+    "Mon",
+    "Fri"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "15:00",
+  "Professor_ID": 5,
+  "Room_Number": "1-412",
+  "Student_IDs": [
+    4,
+    5,
+    6
+  ]
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae6"
+  },
+  "ID": 8,
+  "Name": "BUS-203",
+  "Class_End_Date": "2022-05-07",
+  "Class_Meeting_Days": [
+    "Thur",
+    "Fri"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "7:45",
+  "Professor_ID": 7,
+  "Room_Number": "12-127",
+  "Student_IDs": [
+    3,
+    4
+  ]
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae7"
+  },
+  "ID": 9,
+  "Name": "BUS-313",
+  "Class_End_Date": "2022-05-08",
+  "Class_Meeting_Days": [
+    "Mon",
+    "Fri"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "16:30",
+  "Professor_ID": 9,
+  "Room_Number": "5-315",
+  "Student_IDs": [
+    1,
+    2
+  ]
+},{
+  "_id": {
+    "$oid": "623a6dc338a46b2ce9ab8ae8"
+  },
+  "ID": 10,
+  "Name": "PHY-113",
+  "Class_End_Date": "2022-05-09",
+  "Class_Meeting_Days": [
+    "Tues",
+    "Wed"
+  ],
+  "Class_Start_Date": "2021-01-04",
+  "Class_Time": "9:00",
+  "Professor_ID": 10,
+  "Room_Number": "13-117",
+  "Student_IDs": [
+    1,
+    2,
+    3
+  ]
+}]

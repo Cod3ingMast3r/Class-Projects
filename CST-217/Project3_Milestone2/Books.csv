@@ -1,0 +1,17 @@
+book_id,title,genre,publisher_name,published_year,ISBN,cost
+1,"2 blue 2 red",poetry,"Good Publishing Company",1999,826-4-77-827364-1,1
+2,"aples and oranges",poetry,"Great Publishing Company",1800,792-2-37-838493-7,6.54
+3,"oranges and door hinges",poetry,"Great Publishing Company",1750,923-8-72-843649-9,8.76
+4,"poetry slammed into the wall",poetry,"Amazing Publishing Company",2020,987-9-94-826485-3,9.54
+5,"your mom is an elegant flower",poetry,"Good Publishing Company",2017,123-1-12-123456-1,100.43
+6,"my large ponies",novel,"Great Publishing Company",1943,234-2-23-234567-2,98.7
+7,"the talking apple",novel,"Best Name Here Publishing Company",1670,345-3-34-345678-3,93.2
+8,"the talking orange",novel,"Best Name Here Publishing Company",1999,456-4-45-456789-4,12
+9,"the talking door hinge",novel,"Best Name Here Publishing Company",1800,654-0-83-748365-3,19.99
+10,"if plastic could talk",novel,"Good Publishing Company",1800,134-1-78-836548-5,20
+11,"bromeo and joe",drama,"Best Name Here Publishing Company",2022,724-5-28-732654-8,17.77
+12,"the love story of a century",drama,"Best Name Here Publishing Company",2022,749-2-23-728489-5,7.77
+13,"the love story of a millennium",drama,"Great Publishing Company",2022,274-2-45-835484-6,13.87
+14,"the love story of a lifetime",drama,"Great Publishing Company",2022,018-0-23-743282-4,43.99
+15,"th elove story of a decade",drama,"Good Publishing Company",2022,936-2-45-837684-3,50
+16,"I work Alone",poetry,"My Own Publishing Company",2001,111-1-11-111111-1,100

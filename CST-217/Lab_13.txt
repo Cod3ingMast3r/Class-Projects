@@ -1,0 +1,27 @@
+1.     Multivalued attribute
+	- An attribute that consists ofmany values, often portraid in an array.
+	Example: A worker having many projects.
+
+2.     Cardinality
+	- Two tables and the relationship between them.
+	Example: A student can have many classes and a class can have many students.
+
+3.     Weak Entity
+	- An entity which must be identified by other attributes in combination with itself.
+	Example: A room number and how it would also require a building number.
+
+4.     Business Rule
+	- A rule that instructs how one is to construct a database.
+	Example: The sex category should only be populated with 'M' or 'F'.
+
+5.     Recursive relationship
+	- When a table has a relationship with itself.
+	Example: A teacher supervising other teachers.
+
+6.     Derived attribute
+	- Attribute created from other attribute values.
+	Example: Age can be derived from an individual's date of birth.
+
+7.     Composite Attribute
+	- Attribute created of other attribute values.
+	Example: Individual values of street city and zip being combind into one.

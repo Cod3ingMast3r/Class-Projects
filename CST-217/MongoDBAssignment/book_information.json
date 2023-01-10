@@ -1,0 +1,353 @@
+[{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d569"
+  },
+  "book_id": 1,
+  "title": "2 blue 2 red",
+  "genre": "poetry",
+  "publisher_name": "Good Publishing Company",
+  "published_year": 1999,
+  "ISBN": "826-4-77-827364-1",
+  "cost": 0.99,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d56a"
+  },
+  "book_id": 2,
+  "title": "aples and oranges",
+  "genre": "poetry",
+  "publisher_name": "Great Publishing Company",
+  "published_year": 1800,
+  "ISBN": "792-2-37-838493-7",
+  "cost": 6.54,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d56b"
+  },
+  "book_id": 3,
+  "title": "oranges and door hinges",
+  "genre": "poetry",
+  "publisher_name": "Great Publishing Company",
+  "published_year": 1750,
+  "ISBN": "923-8-72-843649-9",
+  "cost": 8.76,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d56c"
+  },
+  "book_id": 4,
+  "title": "poetry slammed into the wall",
+  "genre": "poetry",
+  "publisher_name": "Amazing Publishing Company",
+  "published_year": 2020,
+  "ISBN": "987-9-94-826485-3",
+  "cost": 9.54,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d56d"
+  },
+  "book_id": 5,
+  "title": "your mom is an elegant flower",
+  "genre": "poetry",
+  "publisher_name": "Good Publishing Company",
+  "published_year": 2017,
+  "ISBN": "123-1-12-123456-1",
+  "cost": 100.43,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d56e"
+  },
+  "book_id": 6,
+  "title": "my large ponies",
+  "genre": "novel",
+  "publisher_name": "Great Publishing Company",
+  "published_year": 1943,
+  "ISBN": "234-2-23-234567-2",
+  "cost": 98.7,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d56f"
+  },
+  "book_id": 7,
+  "title": "the talking apple",
+  "genre": "novel",
+  "publisher_name": "Best Name Here Publishing Company",
+  "published_year": 1670,
+  "ISBN": "345-3-34-345678-3",
+  "cost": 93.2,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d570"
+  },
+  "book_id": 8,
+  "title": "the talking orange",
+  "genre": "novel",
+  "publisher_name": "Best Name Here Publishing Company",
+  "published_year": 1999,
+  "ISBN": "456-4-45-456789-4",
+  "cost": 12.01,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d571"
+  },
+  "book_id": 9,
+  "title": "the talking door hinge",
+  "genre": "novel",
+  "publisher_name": "Best Name Here Publishing Company",
+  "published_year": 1800,
+  "ISBN": "654-0-83-748365-3",
+  "cost": 19.99,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d572"
+  },
+  "book_id": 10,
+  "title": "if plastic could talk",
+  "genre": "novel",
+  "publisher_name": "Good Publishing Company",
+  "published_year": 1800,
+  "ISBN": "134-1-78-836548-5",
+  "cost": 20.01,
+  "Authors": [
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d573"
+  },
+  "book_id": 11,
+  "title": "bromeo and joe",
+  "genre": "drama",
+  "publisher_name": "Best Name Here Publishing Company",
+  "published_year": 2022,
+  "ISBN": "724-5-28-732654-8",
+  "cost": 17.77,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d574"
+  },
+  "book_id": 12,
+  "title": "the love story of a century",
+  "genre": "drama",
+  "publisher_name": "Best Name Here Publishing Company",
+  "published_year": 2022,
+  "ISBN": "749-2-23-728489-5",
+  "cost": 7.77,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d575"
+  },
+  "book_id": 13,
+  "title": "the love story of a millennium",
+  "genre": "drama",
+  "publisher_name": "Great Publishing Company",
+  "published_year": 2022,
+  "ISBN": "274-2-45-835484-6",
+  "cost": 13.87,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "patty",
+      "lname": "pitchens"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d576"
+  },
+  "book_id": 14,
+  "title": "the love story of a lifetime",
+  "genre": "drama",
+  "publisher_name": "Great Publishing Company",
+  "published_year": 2022,
+  "ISBN": "018-0-23-743282-4",
+  "cost": 43.99,
+  "Authors": [
+    {
+      "fname": "greg",
+      "lname": "borus"
+    },
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d577"
+  },
+  "book_id": 15,
+  "title": "th elove story of a decade",
+  "genre": "drama",
+  "publisher_name": "Good Publishing Company",
+  "published_year": 2022,
+  "ISBN": "936-2-45-837684-3",
+  "cost": 50.01,
+  "Authors": [
+    {
+      "fname": "hal",
+      "lname": "dugen"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625614271b9b90b919a3d578"
+  },
+  "book_id": 16,
+  "title": "I work Alone",
+  "genre": "poetry",
+  "publisher_name": "My Own Publishing Company",
+  "published_year": 2001,
+  "ISBN": "111-1-11-111111-1",
+  "cost": 99.99,
+  "Authors": [
+    {
+      "fname": "solo",
+      "lname": "mgee"
+    }
+  ]
+}]

@@ -1,0 +1,201 @@
+[{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a73"
+  },
+  "ID": 1,
+  "fName": "Kermit",
+  "lName": "Hooper",
+  "Sex": "M",
+  "Email": "hooper.kermit@gcu.edu",
+  "Phone": "(241) 601-8727",
+  "Date_of_Birth": "1961-10-07",
+  "Salary": 71328.21,
+  "Department": "CSET",
+  "Degree": "Biochemical Engineering",
+  "Address": {
+    "Street_Address": "P.O. Box 645, 5010 Elit, Avenue",
+    "City": "Cork",
+    "Zip": "94-213",
+    "Country": "Netherlands"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a74"
+  },
+  "ID": 2,
+  "fName": "Ebony",
+  "lName": "Cruz",
+  "Sex": "F",
+  "Email": "ebony.cruz8346@gcu.edu",
+  "Phone": "(361) 601-1285",
+  "Date_of_Birth": "1983-07-24",
+  "Salary": 54375.03,
+  "Department": "Performing arts",
+  "Degree": "Software Devolopment ",
+  "Address": {
+    "Street_Address": "595-3293 Orci St.",
+    "City": "Delhi",
+    "Zip": "589787",
+    "Country": "United States"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a75"
+  },
+  "ID": 3,
+  "fName": "Rosalyn",
+  "lName": "James",
+  "Sex": "F",
+  "Email": "j-rosalyn@gcu.edu",
+  "Phone": "(348) 886-1429",
+  "Date_of_Birth": "1968-01-01",
+  "Salary": 67268.87,
+  "Department": "Medical Studies",
+  "Degree": "90s Era Dance",
+  "Address": {
+    "Street_Address": "345-117 Sit Rd.",
+    "City": "Tyumen",
+    "Zip": "38270553",
+    "Country": "South Korea"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a76"
+  },
+  "ID": 4,
+  "fName": "Odette",
+  "lName": "Daugherty",
+  "Sex": "M",
+  "Email": "o_daugherty661@gcu.edu",
+  "Phone": "(957) 697-8593",
+  "Date_of_Birth": "1983-09-29",
+  "Salary": 39129.64,
+  "Department": "Teaching",
+  "Degree": "Christian Studies",
+  "Address": {
+    "Street_Address": "P.O. Box 176, 5609 In Rd.",
+    "City": "Tauranga",
+    "Zip": "2938",
+    "Country": "Colombia"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a77"
+  },
+  "ID": 5,
+  "fName": "Latifah",
+  "lName": "Franklin",
+  "Sex": "M",
+  "Email": "franklinlatifah3580@gcu.edu",
+  "Phone": "(709) 846-7051",
+  "Date_of_Birth": "1986-10-29",
+  "Salary": 78980.44,
+  "Department": "Communications",
+  "Degree": "Christian Studies",
+  "Address": {
+    "Street_Address": "Ap #518-6385 Lacus St.",
+    "City": "Gimcheon",
+    "Zip": "WB5U 1DP",
+    "Country": "New Zealand"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a78"
+  },
+  "ID": 6,
+  "fName": "Lavinia",
+  "lName": "Mendez",
+  "Sex": "M",
+  "Email": "mendezlavinia@gcu.edu",
+  "Phone": "(203) 325-2142",
+  "Date_of_Birth": "1965-11-18",
+  "Salary": 54463.17,
+  "Department": "Communications",
+  "Degree": "Biochemical Engineering",
+  "Address": {
+    "Street_Address": "P.O. Box 445, 1416 Iaculis, St.",
+    "City": "Hudiksvall",
+    "Zip": "22136",
+    "Country": "Turkey"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a79"
+  },
+  "ID": 7,
+  "fName": "Carson",
+  "lName": "Scott",
+  "Sex": "M",
+  "Email": "scott-carson@gcu.edu",
+  "Phone": "(811) 383-1827",
+  "Date_of_Birth": "1968-02-20",
+  "Salary": 65752.91,
+  "Department": "Psycology",
+  "Degree": "Software Devolopment ",
+  "Address": {
+    "Street_Address": "8970 Sagittis. Rd.",
+    "City": "Warszawa",
+    "Zip": "7592 US",
+    "Country": "Colombia"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a7a"
+  },
+  "ID": 8,
+  "fName": "Henry",
+  "lName": "Elliott",
+  "Sex": "M",
+  "Email": "ehenry8656@gcu.edu",
+  "Phone": "(313) 441-1913",
+  "Date_of_Birth": "1969-11-02",
+  "Salary": 62178,
+  "Department": "Criminal Justice",
+  "Degree": "Electrical Engineering",
+  "Address": {
+    "Street_Address": "Ap #874-4592 Sit Avenue",
+    "City": "Seattle",
+    "Zip": "966879",
+    "Country": "Vietnam"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a7b"
+  },
+  "ID": 9,
+  "fName": "Carlos",
+  "lName": "Mccormick",
+  "Sex": "F",
+  "Email": "carlos.mccormick@gcu.edu",
+  "Phone": "(529) 879-9511",
+  "Date_of_Birth": "1997-02-19",
+  "Salary": 45901.41,
+  "Department": "CSET",
+  "Degree": "Electrical Engineering",
+  "Address": {
+    "Street_Address": "P.O. Box 821, 8422 Vel St.",
+    "City": "Sukabumi",
+    "Zip": "T7T 6G1",
+    "Country": "Austria"
+  }
+},{
+  "_id": {
+    "$oid": "623a656838a46b2ce9ab8a7c"
+  },
+  "ID": 10,
+  "fName": "Jerry",
+  "lName": "Bird",
+  "Sex": "M",
+  "Email": "j.bird@gcu.edu",
+  "Phone": "(472) 684-1284",
+  "Date_of_Birth": "1980-07-22",
+  "Salary": 46361.25,
+  "Department": "CSET",
+  "Degree": "Software Devolopment ",
+  "Address": {
+    "Street_Address": "612-4476 Quam, Ave",
+    "City": "Melton Mowbray",
+    "Zip": "532243",
+    "Country": "Belgium"
+  }
+}]
